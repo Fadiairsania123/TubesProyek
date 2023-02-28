@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Clean Work HTML CSS Template</title>
+        <title>Top Food</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
                     <div class="col-lg-12 col-12 d-flex flex-wrap">
                         <p class="d-flex me-4 mb-0">
                             <i class="bi-house-fill me-2"></i>
-                            One-Stop Cleaning Service
+                            Top Food
                         </p>
 
                         <p class="d-flex d-lg-block d-md-block d-none me-4 mb-0">
@@ -45,8 +45,8 @@
                         <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
                             <i class="site-header-icon bi-whatsapp me-2"></i>
 
-                            <a href="tel: 110-220-9800" class="text-white">
-                                110 220 9800
+                            <a href="tel: 0831-7649-7537" class="text-white">
+                                0831-7649-7537
                             </a>
                         </p>
                     </div>
@@ -58,9 +58,9 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/bubbles.png" class="logo img-fluid" alt="">
+                    <img src=" " class="logo img-fluid" alt="">
 
-                    <span class="ms-2">Clean Work</span>
+                    <span class="ms-2">TOP FOOD</span>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +70,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link active" href="home">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -81,11 +81,11 @@
                             <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+                                <li><a class="dropdown-item" href="services.html">Order</a></li>
 
-                                <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+                                <li><a class="dropdown-item" href="coming-soon.html">History</a></li>
 
-                                <li><a class="dropdown-item" href="page-404.html">Page 404</a></li>
+                                
                             </ul>
                         </li>
 
@@ -94,7 +94,7 @@
                         </li>
 
                         <li class="nav-item ms-3">
-                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#">Get started</a>
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -111,11 +111,11 @@
 
                         <div class="col-lg-7 col-12 text-center mx-auto">
                             <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                                <span>We clean your</span>
+                                <span>Beli apa ?</span>
                                 <span class="cd-words-wrapper">
-                                    <b class="is-visible">House</b>
-                                    <b>Office</b>
-                                    <b>Kitchen</b>
+                                    <b class="is-visible">Makan</b>
+                                    <b>Minum</b>
+                                    <b>Snack</b>
                                 </span>
                             </h1>
 
@@ -127,61 +127,28 @@
                                         <span>Introduction</span>
                                         <span>Introduction</span>
                                         <span>Introduction</span>
-                                        <span>Introduction</span>
                                     </div>
                                 </div>
                             </a>
 
                             <a class="custom-btn custom-border-btn custom-btn-bg-white btn button button--pan smoothscroll" href="#services-section">
-                                <span>Explore Services</span>
+                                <span>Explore Restaurant</span>
                             </a>
                         </div>
 
                     </div>
                 </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,176C800,160,880,160,960,138.7C1040,117,1120,75,1200,80C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320"><path fill="#f0f8ff" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,176C800,160,880,160,960,138.7C1040,117,1120,75,1200,80C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
             </section>
 
-
-            <section class="intro-section" id="intro-section">
-                <div class="container">
-                    <div class="row justify-content-lg-center align-items-center">
-
-                        <div class="col-lg-6 col-12">
-                            <h2 class="mb-4">Reliable &amp; Fast Cleaning <br> Service</h2>
-
-                            <p><a href="#">Clean Work</a> is a Bootstrap v.5.1.3 HTML CSS template for free download provided by Tooplate. You can use this layout for any purpose. Images are taken from <a rel="nofollow" href="https://www.freepik.com/" target="_blank">FreePik</a> and <a rel="nofollow" href="https://worldvectorlogo.com/" target="_blank">WorldVectorLogo</a> websites.</p>
-                            <p>You <strong>may not</strong> redistribute this template ZIP file on any other template collection website. Please <a href="https://www.tooplate.com/contact" target="_blank">contact us</a> for more info. Thank you.</p>
-                        </div>
-
-                        <div class="col-lg-6 col-12 custom-block-wrap">
-                            <img src="images/male-wearing-apron-female-white-t-shirt-smiling-broadly-being-glad-clean.png" class="img-fluid">
-
-                            <div class="custom-block d-flex flex-column">
-                                <h6 class="text-white mb-3">Need Help? <br> Please call us:</h6>
-
-                                <p class="d-flex mb-0">
-                                    <i class="bi-telephone-fill custom-icon me-2"></i>
-
-                                    <a href="tel: 110-220-9800">
-                                        110-220-9800
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
+    <!-- Resto -->
             <section class="services-section section-padding section-bg" id="services-section">                
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-12 col-12">
-                            <h2 class="mb-4">Our best offers</h2>
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-3">Mau Pilih Resto Apa?</h2> <br>
                         </div>
 
                         <div class="col-lg-6 col-12">
@@ -190,19 +157,19 @@
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="images/services/people-taking-care-office-cleaning.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/person-taking-care-office.jpg" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="images/resto/steak.jpg" class="services-image img-fluid" alt="">
+                                                <img src="images/resto/chicken.jpg" class="services-image services-image-hover img-fluid" alt="">
 
                                                 <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
-                                                            $820
+                                                            Promo
                                                         </p>
 
                                                         <p class="text-white mb-0">
                                                             <i class="bi-clock-fill me-2"></i>
-                                                            5 hrs
+                                                            20 mnt
                                                         </p>
                                                     </div>                                                    
                                                 </div>
@@ -212,11 +179,11 @@
 
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Office Cleaning</a>
-                                            </h4>
+                                            <h5 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="services-detail.html">Dapur Dee - Suhat</a>
+                                            </h5>
 
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+                                            <p>Spesial ayam, bebek, ikan bakar sudah complete dengan nasi dan lalapan</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
@@ -228,16 +195,7 @@
                                                 </div>
 
                                                 <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
+                                                    <span>Detail Resto</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -252,19 +210,19 @@
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="images/services/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/woman-holding-rag-detergent-cleaning-cooker.jpg" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="images/resto/steak.jpg" class="services-image img-fluid" alt="">
+                                                <img src="images/resto/chicken.jpg" class="services-image services-image-hover img-fluid" alt="">
 
                                                 <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
-                                                            $640
+                                                            Promo
                                                         </p>
 
                                                         <p class="text-white mb-0">
                                                             <i class="bi-clock-fill me-2"></i>
-                                                            4 hrs
+                                                            15 mnt
                                                         </p>
                                                     </div>                                                    
                                                 </div>
@@ -274,11 +232,11 @@
 
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Kitchen Cleaning</a>
-                                            </h4>
+                                            <h5 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="services-detail.html">Mie Gacoan - Jl Jakarta</a>
+                                            </h5>
 
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+                                            <p>Tersedia berbagai menu mie disertai dengan dimsum yang lezat</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
@@ -290,16 +248,7 @@
                                                 </div>
 
                                                 <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
+                                                    <span>Detail Resto</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -314,19 +263,19 @@
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="images/services/man-polishing-car-inside-car-service.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/man-polishing-car-inside.jpg" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="images/resto/steak.jpg" class="services-image img-fluid" alt="">
+                                                <img src="images/resto/chicken.jpg" class="services-image services-image-hover img-fluid" alt="">
 
                                                 <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
-                                                            $240
+                                                            Promo
                                                         </p>
 
                                                         <p class="text-white mb-0">
                                                             <i class="bi-clock-fill me-2"></i>
-                                                            2 hrs
+                                                            25 mnt
                                                         </p>
                                                     </div>                                                    
                                                 </div>
@@ -336,11 +285,11 @@
 
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Car Washing</a>
-                                            </h4>
+                                            <h5 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="services-detail.html">Tacibay - Merjosari</a>
+                                            </h5>
 
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+                                            <p>Spesial ayam crispy dan ayam geprek serta free es teh</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
@@ -352,16 +301,7 @@
                                                 </div>
 
                                                 <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
+                                                    <span>Detail Resto</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -376,14 +316,14 @@
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="images/services/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/close-up-mop-cleaning-industrial-plant-floor.jpg" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="images/resto/steak.jpg" class="services-image img-fluid" alt="">
+                                                <img src="images/resto/chicken.jpg" class="services-image services-image-hover img-fluid" alt="">
 
                                                 <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
-                                                            $6,800
+                                                            Promo
                                                         </p>
 
                                                         <p class="text-white mb-0">
@@ -398,11 +338,11 @@
 
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Factory Cleaning</a>
-                                            </h4>
+                                            <h5 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="services-detail.html">Steak & Shake - Jl Bromo</a>
+                                            </h5>
 
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+                                            <p>Tersedia berbagai macam steak ayam dan daging dengan harga murah</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
@@ -414,16 +354,7 @@
                                                 </div>
 
                                                 <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
+                                                    <span>Detail Resto</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -431,12 +362,11 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
 
-
+<!--ulasan-->
             <section class="testimonial-section section-padding section-bg">
                 <div class="section-overlay"></div>
 
@@ -444,132 +374,62 @@
                     <div class="row">
 
                         <div class="col-lg-12 col-12 text-center">
-                            <h2 class="text-white mb-4">Happy Customers</h2>
+                            <h2 class="text-white mb-4">Hot Deals Food!</h2>
                         </div>
 
                         <div class="col-lg-4 col-12">
                             <div class="featured-block">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
-
-                                    <div class="ms-3">
-                                        <h4 class="mb-0">Marie</h4>
-
-                                        <div class="reviews-icons mb-1">
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star"></i>
-                                        </div>
-                                    </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <img src=" ">
                                 </div>
 
-                                <p class="mb-0">Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
                             </div>
 
                             <div class="featured-block mb-lg-0">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-02.jpg" class="avatar-image img-fluid">
+                                    <img src="" class="avatar-image img-fluid">
 
-                                    <div class="ms-3">
-                                        <h4 class="mb-0">Nana</h4>
-
-                                        <div class="reviews-icons mb-1">
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star"></i>
-                                        </div>
-                                    </div>
+                                  
                                 </div>
 
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                              
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-12">
                             <div class="featured-block">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-03.jpg" class="avatar-image img-fluid">
-
-                                    <div class="ms-3">
-                                        <h4 class="mb-0">Elon</h4>
-
-                                        <div class="reviews-icons mb-1">
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
 
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                               
                             </div>
 
                             <div class="featured-block mb-lg-0">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-04.jpg" class="avatar-image img-fluid">
-
-                                    <div class="ms-3">
-                                        <h4 class="mb-0">Josh</h4>
-
-                                        <div class="reviews-icons mb-1">
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star"></i>
-                                            <i class="bi-star"></i>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
 
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-12">
                             <div class="featured-block">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-05.jpg" class="avatar-image img-fluid">
-
-                                    <div class="ms-3">
-                                        <h4 class="mb-0">Katie</h4>
-
-                                        <div class="reviews-icons mb-1">
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                        </div>
-                                    </div>
+                                    
+                                    
                                 </div>
 
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                
                             </div>
 
                             <div class="featured-block mb-lg-0">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-06.jpg" class="avatar-image img-fluid">
-
-                                    <div class="ms-3">
-                                        <h4 class="mb-0">Shai</h4>
-
-                                        <div class="reviews-icons mb-1">
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star"></i>
-                                            <i class="bi-star"></i>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
 
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                
                             </div>
                         </div>
 
@@ -577,48 +437,34 @@
                 </div>
             </section>
 
-
-            <section class="partners-section">
+<!--kenapa-->
+<section class="intro-section" id="intro-section">
                 <div class="container">
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row justify-content-lg-center align-items-center">
 
-                        <div class="col-lg-12 col-12">
-                            <h4 class="partners-section-title bg-white shadow-lg">Trusted by companies</h4>
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4">Kenapa Harus TopFood ?</h2>
+
+                            <p><b>Paling Cepat</b> -- Layanan antar makanan TopFood adalah yang tercepat dari semua layanan yang ada. </p>
+                            <p><b>Banyak Pilihan Menu</b> --  Mulai dari menu makanan berat hingga makanan ringan, kami sediakan untuk memuaskan rasa lapar Anda.</p>
+                            <p><b>Kemudahan Transaksi</b> --  Memesan makanan sekarang menjadi sangat mudah. Pembayaran juga bahkan lebih mudah lagi dengan adanya TopPay.</p>
                         </div>
 
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/toprak-leasing.svg" class="partners-image img-fluid">
+                        <div class="col-lg-6 col-12 custom-block-wrap">
+                            <img src="images/kurir1.jpg" class="img-fluid">
                         </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/glorix.svg" class="partners-image img-fluid">
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/woocommerce.svg" class="partners-image img-fluid">
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/rolf-leasing.svg" class="partners-image img-fluid">
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/unilabs.svg" class="partners-image img-fluid">
-                        </div>
-
                     </div>
                 </div>
             </section>
-        </main>
 
-
+<!--footer -->
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
 
                     <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
                         <div>
-                            <img src="images/bubbles.png" class="logo img-fluid" alt="">
+                            <img src=" " class="logo img-fluid" alt="">
                         </div>
 
                         <ul class="footer-menu d-flex flex-wrap ms-5">
@@ -633,41 +479,41 @@
                     </div>
 
                     <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                        <h5 class="site-footer-title mb-3">Our Services</h5>
+                        <h5 class="site-footer-title mb-3">Pilihan</h5>
 
                         <ul class="footer-menu">
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    House Cleaning
+                                    Drinks
                                 </a>
                             </li>
 
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Car Washing
+                                    Snack
                                 </a>
                             </li>
 
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Laundry
+                                    Food
                                 </a>
                             </li>
 
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Office Cleaning
+                                    Restaurant
                                 </a>
                             </li>
 
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Toilet Cleaning
+                                    Restaurant
                                 </a>
                             </li>
                         </ul>
@@ -678,14 +524,14 @@
 
                         <p class="text-white d-flex mt-3 mb-2">
                             <i class="bi-geo-alt-fill me-2"></i>
-                            Akershusstranda 20, 0150 Oslo, Norway
+                            Malang, Jawa Timur, Indonesia
                         </p>
 
                         <p class="text-white d-flex mb-2">
                             <i class="bi-telephone-fill me-2"></i>
 
                             <a href="tel: 110-220-9800" class="site-footer-link">
-                                110-220-9800
+                                0831-7649-7537
                             </a>
                         </p>
 
@@ -693,7 +539,7 @@
                             <i class="bi-envelope-fill me-2"></i>
 
                             <a href="mailto:info@company.com" class="site-footer-link">
-                                info@company.com
+                                TopFood@gmail.com
                             </a>
                         </p>
 
@@ -723,7 +569,7 @@
 
                     <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
                         <div class="featured-block">
-                            <h5 class="text-white mb-3">Service Hours</h5>
+                            <h5 class="text-white mb-3">Service Admin</h5>
 
                             <strong class="d-block text-white mb-1">Mon - Fri</strong>
 
@@ -742,12 +588,12 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
-                            <p class="copyright-text mb-0">Copyright © 2036 Clean Work Co., Ltd.</p>
+                            <p class="copyright-text mb-0">Copyright © Top Food East 2023</p>
                         </div>
                         
                         <div class="col-lg-6 col-12 text-end">
                             <p class="copyright-text mb-0">
-                            // Designed by <a href="https://www.tooplate.com" target="_parent">Tooplate</a> //</p>
+                            // Designed by Kelompok 5 //</p>
                         </div>
                         
                     </div>
