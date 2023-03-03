@@ -58,7 +58,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src=" " class="logo img-fluid" alt="">
+                    <img src="images/logo.png" class="logo img-fluid" alt="">
 
                     <span class="ms-2">TOP FOOD</span>
                 </a>
@@ -94,7 +94,7 @@
                         </li>
 
                         <li class="nav-item ms-3">
-                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#">Login</a>
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('login')}}">Login</a>
                         </li>
                     </ul>
                 </div>

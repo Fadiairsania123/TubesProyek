@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/home",[HomeController::class,"index"]);
+Route::view('/login', 'login')->name('login');
+Route::get("/home",[HomeController::class,"index"])->name('home');
