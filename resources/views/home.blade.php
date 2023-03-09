@@ -142,6 +142,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320"><path fill="#f0f8ff" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,176C800,160,880,160,960,138.7C1040,117,1120,75,1200,80C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
             </section>
 
+            
     <!-- Resto -->
             <section class="services-section section-padding section-bg" id="services-section">                
                 <div class="container">
@@ -377,22 +378,19 @@
                             <h2 class="text-white mb-4">Hot Deals Food!</h2>
                         </div>
 
-                        <div class="col-lg-4 col-12">
+                        <div class="col-lg-3 col-12">
                             <div class="featured-block">
                                 <div class="d-flex align-items-center mb-1">
-                                    <img src=" ">
+                                    <img src="images/resto/steak.jpg" class="img-fluid" style="width: 250px">
                                 </div>
+                                <p>ghhhhh</p>
 
                             </div>
 
                             <div class="featured-block mb-lg-0">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="" class="avatar-image img-fluid">
-
-                                  
+                                    <img src="images/resto/steak.jpg" class="img-fluid" style="width: 100px">
                                 </div>
-
-                              
                             </div>
                         </div>
 
