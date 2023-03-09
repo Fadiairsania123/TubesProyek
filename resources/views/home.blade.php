@@ -41,7 +41,9 @@
                             <i class="bi-clock-fill me-2"></i>
                             <strong class="me-2">Mon - Fri</strong> 8:00 AM - 5:30 PM
                         </p>
-
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control form-control-sm" type="text" placeholder="masukkan alamat mu">
+                          </form>
                         <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
                             <i class="site-header-icon bi-whatsapp me-2"></i>
 
