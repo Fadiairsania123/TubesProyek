@@ -95,8 +95,15 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
 
-                        <li class="nav-item ms-3">
+                        <li class="nav-item ms-3 dropdown">
+                            @if (Auth::user())
+                            <a class="nav-link dropdown-toggle custom-btn custom-border-btn custom-btn-bg-white btn" >{{ Auth::user()->name }}</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
+                            </ul>
+                            @else 
                             <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('login')}}">Login</a>
+                            @endif
                         </li>
                     </ul>
                 </div>
