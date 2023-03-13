@@ -24,6 +24,7 @@ Route::post('/login', [LoginController::class,'login'])->name('login.action');
 Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 Route::post('/register', [LoginController::class,'register'])->name('register.action');
 Route::get("/home",[HomeController::class,"index"])->name('home');
+Route::get("/about",[AboutController::class,"index"])->name('about');
 
 // verifikasi registrasi
 Route::get('/activation', [LoginController::class,'activation'])->name('activation');
