@@ -50,6 +50,14 @@ body{
     opacity: 1;
     transition: opacity 0.2s ease;
 }
+.container .forgot{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.container.active .forgot{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
 .container.active .forms{
     height: 600px;
 }
@@ -152,6 +160,11 @@ body{
 }
 
 .form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form .login-forgot{
     margin-top: 30px;
     text-align: center;
 }
