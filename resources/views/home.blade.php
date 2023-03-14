@@ -204,7 +204,7 @@
                                                     <i class="bi-star"></i>
                                                 </div>
 
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                <a href="detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
                                                     <span>Detail Resto</span>
                                                 </a>
                                             </div>
@@ -386,57 +386,77 @@
                         <div class="col-lg-12 col-12 text-center">
                             <h2 class="text-white mb-4">Hot Deals Food!</h2>
                         </div>
+                        <section class="partners-section">
+                            <div class="container">
+                                <div class="row justify-content-center align-items-center">
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>Indonesia</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
+                                        <p>Jepang</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food3.jpg" class="team-image img-fluid"><br>
+                                        <p>Korea</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>China</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
 
-                        <div class="col-lg-3 col-12">
-                            <div class="featured-block">
-                                <div class="d-flex align-items-center mb-1">
-                                    <img src="images/resto/steak.jpg" class="img-fluid" style="width: 250px">
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food3.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div> <br>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food3.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/teams/young-cleaning-man-wearing-casual-clothes.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
                                 </div>
-                                <p>ghhhhh</p>
-
                             </div>
+                        </section>
 
-                            <div class="featured-block mb-lg-0">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="images/resto/steak.jpg" class="img-fluid" style="width: 100px">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="featured-block">
-                                <div class="d-flex align-items-center mb-3">
-                                    
-                                </div>
+                       
 
                                
-                            </div>
-
-                            <div class="featured-block mb-lg-0">
-                                <div class="d-flex align-items-center mb-3">
-                                    
-                                </div>
-
-                                
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="featured-block">
-                                <div class="d-flex align-items-center mb-3">
-                                    
-                                    
-                                </div>
-
-                                
-                            </div>
-
-                            <div class="featured-block mb-lg-0">
-                                <div class="d-flex align-items-center mb-3">
-                                   
-                                </div>
-
-                                
+                     
                             </div>
                         </div>
 
