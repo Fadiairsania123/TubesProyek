@@ -41,7 +41,9 @@
                             <i class="bi-clock-fill me-2"></i>
                             <strong class="me-2">Mon - Fri</strong> 8:00 AM - 5:30 PM
                         </p>
-
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control form-control-sm" type="text" placeholder="masukkan alamat mu">
+                          </form>
                         <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
                             <i class="site-header-icon bi-whatsapp me-2"></i>
 
@@ -74,7 +76,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="about">About Us</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -93,8 +95,15 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
 
-                        <li class="nav-item ms-3">
+                        <li class="nav-item ms-3 dropdown">
+                            @if (Auth::user())
+                            <a class="nav-link dropdown-toggle custom-btn custom-border-btn custom-btn-bg-white btn" >{{ Auth::user()->name }}</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
+                            </ul>
+                            @else 
                             <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('login')}}">Login</a>
+                            @endif
                         </li>
                     </ul>
                 </div>
@@ -142,6 +151,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320"><path fill="#f0f8ff" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,176C800,160,880,160,960,138.7C1040,117,1120,75,1200,80C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
             </section>
 
+            
     <!-- Resto -->
             <section class="services-section section-padding section-bg" id="services-section">                
                 <div class="container">
@@ -194,7 +204,7 @@
                                                     <i class="bi-star"></i>
                                                 </div>
 
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                <a href="detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
                                                     <span>Detail Resto</span>
                                                 </a>
                                             </div>
@@ -376,60 +386,77 @@
                         <div class="col-lg-12 col-12 text-center">
                             <h2 class="text-white mb-4">Hot Deals Food!</h2>
                         </div>
+                        <section class="partners-section">
+                            <div class="container">
+                                <div class="row justify-content-center align-items-center">
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>Indonesia</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
+                                        <p>Jepang</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food3.jpg" class="team-image img-fluid"><br>
+                                        <p>Korea</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>China</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
 
-                        <div class="col-lg-4 col-12">
-                            <div class="featured-block">
-                                <div class="d-flex align-items-center mb-1">
-                                    <img src=" ">
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food3.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div> <br>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food3.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/teams/young-cleaning-man-wearing-casual-clothes.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
+                                        <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
+                                        <p>India</p>
+                                    </div>
                                 </div>
-
                             </div>
+                        </section>
 
-                            <div class="featured-block mb-lg-0">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="" class="avatar-image img-fluid">
-
-                                  
-                                </div>
-
-                              
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="featured-block">
-                                <div class="d-flex align-items-center mb-3">
-                                    
-                                </div>
+                       
 
                                
-                            </div>
-
-                            <div class="featured-block mb-lg-0">
-                                <div class="d-flex align-items-center mb-3">
-                                    
-                                </div>
-
-                                
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="featured-block">
-                                <div class="d-flex align-items-center mb-3">
-                                    
-                                    
-                                </div>
-
-                                
-                            </div>
-
-                            <div class="featured-block mb-lg-0">
-                                <div class="d-flex align-items-center mb-3">
-                                   
-                                </div>
-
-                                
+                     
                             </div>
                         </div>
 

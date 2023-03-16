@@ -12,6 +12,7 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+
          
     <!--<title>Login & Registration Form</title>-->
 </head>
@@ -21,8 +22,17 @@
         <div class="forms">
             <div class="form login">
                 <span class="title">Login</span>
-
-                <form action="{{route('submit.login')}}" method="post">
+                @if ($message = Session::get('success'))
+                    <div id="alert" style="color:rgb(4, 255, 113)" class="alert alert-success alert-block mb-3">
+                        {{ $message }}
+                    </div>
+                @endif
+                @if ($message = Session::get('error'))
+                    <div id="alert" style="color:red" class="alert alert-danger alert-block mb-3">
+                        {{ $message }}
+                    </div>
+                @endif
+                <form action="{{route('login.action')}}" method="post">
                     @csrf
                     <div class="input-field">
                         <input name="email" type="text" placeholder="Enter your email" required>
@@ -40,7 +50,7 @@
                             <label for="logCheck" class="text">Remember me</label>
                         </div>
                         
-                        <a href="#" class="text">Forgot password?</a>
+                        <a href="{{ route('forgot') }}" class="text forgot-link">Forgot password?</a>
                     </div>
 
                     <div class="input-field button">
@@ -59,7 +69,7 @@
             <div class="form signup">
                 <span class="title">Registration</span>
 
-                <form action="{{route('submit.register')}}" method="POST">
+                <form action="{{route('register.action')}}" method="POST">
                     @csrf
                     <div class="input-field">
                         <input name="name" type="text" placeholder="Enter your name" required>
@@ -74,14 +84,14 @@
                         <i class="uil uil-lock icon"></i>
                     </div>
                     <div class="input-field">
-                        <input name="c_password" type="password" class="password" placeholder="Confirm a password" required>
+                        <input name="password_confirmation" type="password" class="password" placeholder="Confirm a password" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
 
                     <div class="checkbox-text">
                         <div class="checkbox-content">
-                            <input type="checkbox" id="termCon">
+                            <input type="checkbox" id="termCon" required>
                             <label for="termCon" class="text">I accepted all terms and conditions</label>
                         </div>
                     </div>
@@ -97,6 +107,7 @@
                     </span>
                 </div>
             </div>
+
         </div>
     </div>
 
