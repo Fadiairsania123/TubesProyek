@@ -58,7 +58,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" class="logo img-fluid" alt="">
+                    <img src="images/newlogo.png" class="logo img-fluid" alt="">
 
                     <span class="ms-2">TOP FOOD</span>
                 </a>
