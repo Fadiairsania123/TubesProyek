@@ -161,16 +161,17 @@
                             <h2 class="mb-3">Mau Pilih Resto Apa?</h2> <br>
                         </div>
 
+                        @foreach ($data as $item)
+                            
                         <div class="col-lg-6 col-12">
                             <div class="services-thumb">
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="images/resto/steak.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/resto/chicken.jpg" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="{{ asset('resto/'.$item->image) }}" class="services-image img-fluid" alt="">
 
-                                                <div class="services-icon-wrap">
+                                                {{-- <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
@@ -182,7 +183,7 @@
                                                             20 mnt
                                                         </p>
                                                     </div>                                                    
-                                                </div>
+                                                </div> --}}
                                             </a>
                                         </div>
                                     </div>
@@ -190,169 +191,10 @@
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
                                             <h5 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Dapur Dee - Suhat</a>
+                                                <a class="services-title-link" href="services-detail.html">{{ $item->nama }}</a>
                                             </h5>
 
-                                            <p>Spesial ayam, bebek, ikan bakar sudah complete dengan nasi dan lalapan</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star"></i>
-                                                    <i class="bi-star"></i>
-                                                </div>
-
-                                                <a href="detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Detail Resto</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="images/resto/steak.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/resto/chicken.jpg" class="services-image services-image-hover img-fluid" alt="">
-
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            Promo
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            15 mnt
-                                                        </p>
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h5 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Mie Gacoan - Jl Jakarta</a>
-                                            </h5>
-
-                                            <p>Tersedia berbagai menu mie disertai dengan dimsum yang lezat</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                </div>
-
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Detail Resto</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb mb-lg-0">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="images/resto/steak.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/resto/chicken.jpg" class="services-image services-image-hover img-fluid" alt="">
-
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            Promo
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            25 mnt
-                                                        </p>
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h5 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Tacibay - Merjosari</a>
-                                            </h5>
-
-                                            <p>Spesial ayam crispy dan ayam geprek serta free es teh</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                </div>
-
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Detail Resto</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb mb-lg-0">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="images/resto/steak.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/resto/chicken.jpg" class="services-image services-image-hover img-fluid" alt="">
-
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            Promo
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            30 hrs
-                                                        </p>
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h5 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Steak & Shake - Jl Bromo</a>
-                                            </h5>
-
-                                            <p>Tersedia berbagai macam steak ayam dan daging dengan harga murah</p>
+                                            <p>{{ $item->deskripsi }}</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
@@ -362,16 +204,18 @@
                                                     <i class="bi-star-fill"></i>
                                                     <i class="bi-star"></i>
                                                 </div>
-
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Detail Resto</span>
-                                                </a>
+                                                
                                             </div>
+                                            <a href="{{ route('detail',$item->id) }}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                <span>Detail Resto</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        @endforeach
                     </div>
                 </div>
             </section>

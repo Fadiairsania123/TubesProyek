@@ -28,7 +28,11 @@ class LoginController extends Controller
             $akun = $request->only('email', 'password');
             if (Auth::attempt($akun)) {
                 if(Auth::user()->email_verified_at != null){
-                    return redirect()->route('home');
+                    if(Auth::user()->role == 'ADMIN'){
+                        return redirect()->route('dashboardadmin');
+                    }else{
+                        return redirect()->route('home');
+                    }
                 }else{
                     Auth::logout();
                     return redirect()->route('login')->with(['error' => 'Email Belum terverifikasi, silahkan cek emaill!']);
