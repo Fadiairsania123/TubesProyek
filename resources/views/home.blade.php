@@ -113,7 +113,7 @@
         <main>
 
             <section class="hero-section hero-section-full-height d-flex justify-content-center align-items-center">
-                <div class="section-overlay"></div>
+                <div class=""></div>
 
                 <div class="container">
                     <div class="row">
@@ -285,7 +285,7 @@
                                     </div>
 
                                     <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
-                                        <img src="images/teams/young-cleaning-man-wearing-casual-clothes.jpg" class="team-image img-fluid"><br>
+                                        <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
                                         <p>India</p>
                                     </div>
 
