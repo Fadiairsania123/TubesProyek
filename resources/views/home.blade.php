@@ -113,7 +113,7 @@
         <main>
 
             <section class="hero-section hero-section-full-height d-flex justify-content-center align-items-center">
-                <div class="section-overlay"></div>
+                <div class=""></div>
 
                 <div class="container">
                     <div class="row">
