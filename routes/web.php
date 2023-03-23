@@ -61,3 +61,6 @@ Route::group(['middleware' => ["Admin"],'prefix' => 'admin'], function () {
     Route::get('menu/delete/{id}', [MenuController::class,'destroy'])->name('menu.hapus');
 
 });
+
+Route::get("/contact",[ContactController::class,"index"])->name('contact');
+Route::post("/contact", [ContactController::class,"store"])->name('contact.store');
