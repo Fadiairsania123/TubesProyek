@@ -9,11 +9,11 @@
 
         <title>About Us</title>
 
-        <!-- CSS FILES -->        
+        <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,13 +23,13 @@
         <link href="css/tooplate-clean-work.css" rel="stylesheet">
 
     </head>
-    
+
     <body>
 
         <header class="site-header">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="col-lg-12 col-12 d-flex flex-wrap">
                         <p class="d-flex me-4 mb-0">
                             <i class="bi-house-fill me-2"></i>
@@ -98,7 +98,7 @@
 
                                 <a class="custom-btn btn button button--atlas mt-3" href="contact.html">
                                     <span>Get in touch</span>
-    
+
                                     <div class="marquee" aria-hidden="true">
                                         <div class="marquee__inner">
                                             <span>Get in touch</span>
@@ -132,7 +132,7 @@
                             <div class="card-body text-center">
                                 <h6 class="card-title">Haffas Zikri Ariyandi</h6>
                                 <p class="card-text">210635614807</p>
-                                <a href="#" class="btn btn-primary stretched-link">Tampilkan Profil</a>
+                                <a href="https://instagram.com/haffas_zikri?igshid=YmMyMTA2M2Y=" class="btn btn-primary stretched-link">Tampilkan Profil</a>
                             </div>
                         </div>
 
@@ -150,7 +150,7 @@
                             <div class="card-body text-center">
                                 <h6 class="card-title">Anita Qotrun Nada</h6>
                                 <p class="card-text">21053561487</p>
-                                <a href="#" class="btn btn-primary stretched-link">Tampilkan Profil</a>
+                                <a href="https://instagram.com/aqnada_olnina?igshid=YmMyMTA2M2Y=" class="btn btn-primary stretched-link">Tampilkan Profil</a>
                             </div>
                         </div>
 
@@ -159,7 +159,7 @@
                             <div class="card-body text-center">
                                 <h6 class="card-title">Farkhana Farda Z.</h6>
                                 <p class="card-text">210535614873</p>
-                                <a href="#" class="btn btn-primary stretched-link">Tampilkan Profil</a>
+                                <a href="https://instagram.com/fardazrani?igshid=YmMyMTA2M2Y=" class="btn btn-primary stretched-link">Tampilkan Profil</a>
                             </div>
                         </div>
                     </div>
@@ -335,12 +335,12 @@
                 <div class="col-lg-6 col-12">
                     <p class="copyright-text mb-0">Copyright © Top Food East 2023</p>
                 </div>
-                
+
                 <div class="col-lg-6 col-12 text-end">
                     <p class="copyright-text mb-0">
                     // Designed by Kelompok 5 //</p>
                 </div>
-                
+
             </div>
         </div>
     </div>
