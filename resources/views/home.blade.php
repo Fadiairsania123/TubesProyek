@@ -9,11 +9,11 @@
 
         <title>Top Food</title>
 
-        <!-- CSS FILES -->        
+        <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,13 +24,13 @@
 
 
     </head>
-    
+
     <body>
 
         <header class="site-header">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="col-lg-12 col-12 d-flex flex-wrap">
                         <p class="d-flex me-4 mb-0">
                             <i class="bi-house-fill me-2"></i>
@@ -87,12 +87,12 @@
 
                                 <li><a class="dropdown-item" href="coming-soon.html">History</a></li>
 
-                                
+
                             </ul>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact">Contact</a>
                         </li>
 
                         <li class="nav-item ms-3 dropdown">
@@ -101,7 +101,7 @@
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                                 <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
                             </ul>
-                            @else 
+                            @else
                             <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('login')}}">Login</a>
                             @endif
                         </li>
@@ -151,9 +151,9 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320"><path fill="#f0f8ff" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,176C800,160,880,160,960,138.7C1040,117,1120,75,1200,80C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
             </section>
 
-            
+
     <!-- Resto -->
-            <section class="services-section section-padding section-bg" id="services-section">                
+            <section class="services-section section-padding section-bg" id="services-section">
                 <div class="container">
                     <div class="row">
 
@@ -162,7 +162,7 @@
                         </div>
 
                         @foreach ($data as $item)
-                            
+
                         <div class="col-lg-6 col-12">
                             <div class="services-thumb">
                                 <div class="row">
@@ -182,7 +182,7 @@
                                                             <i class="bi-clock-fill me-2"></i>
                                                             20 mnt
                                                         </p>
-                                                    </div>                                                    
+                                                    </div>
                                                 </div> --}}
                                             </a>
                                         </div>
@@ -204,7 +204,7 @@
                                                     <i class="bi-star-fill"></i>
                                                     <i class="bi-star"></i>
                                                 </div>
-                                                
+
                                             </div>
                                             <a href="{{ route('detail',$item->id) }}" class="custom-btn btn button button--atlas mt-2 ms-auto">
                                                 <span>Detail Resto</span>
@@ -233,27 +233,27 @@
                         <section class="partners-section">
                             <div class="container">
                                 <div class="row justify-content-center align-items-center">
-            
+
                                     <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
                                         <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
                                         <p>Indonesia</p>
                                     </div>
-            
+
                                     <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
                                         <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
                                         <p>Jepang</p>
                                     </div>
-            
+
                                     <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
                                         <img src="images/about/food3.jpg" class="team-image img-fluid"><br>
                                         <p>Korea</p>
                                     </div>
-            
+
                                     <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
                                         <img src="images/about/food1.jpg" class="team-image img-fluid"><br>
                                         <p>China</p>
                                     </div>
-            
+
                                     <div class="col-lg-2 col-md-5 col-8 mb-lg-0 mb-md-4">
                                         <img src="images/about/food2.jpg" class="team-image img-fluid"><br>
                                         <p>India</p>
@@ -297,10 +297,10 @@
                             </div>
                         </section>
 
-                       
 
-                               
-                     
+
+
+
                             </div>
                         </div>
 
@@ -461,12 +461,12 @@
                         <div class="col-lg-6 col-12">
                             <p class="copyright-text mb-0">Copyright © Top Food East 2023</p>
                         </div>
-                        
+
                         <div class="col-lg-6 col-12 text-end">
                             <p class="copyright-text mb-0">
                             // Designed by Kelompok 5 //</p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
