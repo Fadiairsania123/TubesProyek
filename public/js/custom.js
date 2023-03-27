@@ -10,7 +10,7 @@
 
     // BACKSTRETCH SLIDESHOW
     $('.hero-section').backstretch([
-      "images/slideshow/chicken.jpg", 
+      "images/about/food3.jpg", 
       "images/slideshow/sate.jpg",
       "images/slideshow/steak.jpg"
     ],  {duration: 2000, fade: 750});
