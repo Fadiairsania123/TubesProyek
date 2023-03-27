@@ -99,8 +99,10 @@
                             @if (Auth::user())
                             <a class="nav-link dropdown-toggle custom-btn custom-border-btn custom-btn-bg-white btn" >{{ Auth::user()->name }}</a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{{ route('transaction') }}">Pesanan</a></li>
                                 <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
                             </ul>
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('cart')}}"><i class="bi bi-bag-check iconBeli"></i> Cart</a>
                             @else 
                             <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('login')}}">Login</a>
                             @endif

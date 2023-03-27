@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Detail Resto</title>
+        <title>Cart</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,19 +120,9 @@
                     <div class="row">
 
                         <div class="col-lg-7 col-12">
-                            <h1 class="text-white mb-lg-0">Resto Pilihan</h1>
+                            <h1 class="text-white mb-lg-0">Transaction</h1>
                         </div>
 
-                        <div class="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center ms-auto">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="home">Home</a></li>
-
-                                    <li class="breadcrumb-item active" aria-current="page">Detail Resto</li>
-                                    <li class="breadcrumb-item active" aria-current="page">{{ $data->nama }}</li>
-                                </ol>
-                            </nav>
-                        </div>
 
                     </div>
                 </div>
@@ -142,232 +132,47 @@
             <section class="services-detail-section section-padding">
                 <div class="container">
                     <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-image-wrap">
-                                <img src="{{ asset('resto/'.$data->image) }}" class="services-image img-fluid" alt="">
+                        <div class="col consulting-form shadow-lg">
+                            <table class="table">
+                                <tr>
+                                    <td>No</td>
+                                    <td>Nama</td>
+                                    <td>Harga</td>
+                                    <td>Qty</td>
+                                </tr>
+                                @php
+                                    $total = 0;   
+                                    $qty = 0;   
+                                @endphp
+                                @foreach ($data as $key => $item)
+                                    <tr>
+                                        <td>{{ $key+1 }}</td>
+                                        <td>{{ $item->menu->makanan }}</td>
+                                        <td>{{ $item->menu->harga }}</td>
+                                        <td>{{ $item->qty }}</td>
+                                        @php
+                                            $total += $item->menu->harga;
+                                            $qty += $item->qty;
+                                        @endphp
+                                    </tr>
+                                @endforeach
+                                <tr>
+                                    <td></td>
+                                    <td style="text-align: right">Total</td>
+                                    <td>{{ $total }}</td>
+                                    <td>{{ $qty }}</td>
+                                </tr>
+                            </table>
+                            <div class="mx-auto">
+                                <a href="{{ route('transaction') }}" class="custom-btn btn button button--atlas mt-2 ms-auto">Back</a>
                             </div>
                         </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-info px-4 pt-4">
-                                <h3 class="mb-4"><b>{{ $data->nama }}</h3></b>
-                                {{-- <p>Spesial Lalapan</p> --}}
-
-                                <h6 class="mt-4">Deskripsi</h6>
-
-                                <p>{{ $data->deskripsi }}</p>
-
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
 
 
-            <section class="section-padding pt-0">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12">
-                            <h2 class="mb-4">Menu</h2>
-                        </div>
-
-                        @foreach ($data->menu as $item)
-                            
-                        <div class="col-lg-6 col-12 border bg-light">
-                            <div class="services-thumb bg-light">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="{{ asset('menu/'.$item->image) }}" width="200" class="services-image img-fluid" alt="">
-
-                                                {{-- <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            Promo
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            20 mnt
-                                                        </p>
-                                                    </div>                                                    
-                                                </div> --}}
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h5 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">{{ $item->makanan }}</a>
-                                            </h5>
-
-                                            <p>{{ $item->deskripsi }}</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <span class="text-primary">Rp. {{ number_format($item->harga,0,',','.'); }}</span>
-
-                                                <a data-id="{{ $item->id }}" id="cart-{{ $item->id }}" class="btn-success btn button mt-2 ms-auto beli">
-                                                    <i class="bi bi-plus iconBeli"></i>
-                                                </a>
-                                                <a style="display:none" href="{{ route('cart') }}" class="btn-outline-success btn button mt-2 ms-auto cart-{{ $item->id }}">
-                                                    {{-- <i class="bi bi-plus iconBeli"></i> --}}
-                                                    <i class="bi bi-bag-check iconBeli"></i>
-                                                </a>
-                                            </div>
-                                            <br>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
-
-                    </div>
-                </div>
-            </section>
-
-            {{-- <section class="section-padding section-bg">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12">
-                            <h2 class="mb-4">Related Services</h2>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb mb-lg-0">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="images/services/man-polishing-car-inside-car-service.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/man-polishing-car-inside.jpg" class="services-image services-image-hover img-fluid" alt="">
-
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            $240
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            2 hrs
-                                                        </p>
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Car Washing</a>
-                                            </h4>
-
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                </div>
-
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb mb-lg-0">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="images/services/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/close-up-mop-cleaning-industrial-plant-floor.jpg" class="services-image services-image-hover img-fluid" alt="">
-
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            $6,800
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            30 hrs
-                                                        </p>
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Factory Cleaning</a>
-                                            </h4>
-
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star"></i>
-                                                </div>
-
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section> --}}
+            
 
 
             <section class="partners-section">
@@ -566,19 +371,15 @@
                 }
             });
             $(document).ready(function(){
-                $('.beli').on('click',function(){
-                    var id_menu = $(this).data('id')
+                $('.qty_edit').change(function(){
+                    var id = $(this).data('id');
+                    var qty = this.value;
                     $.ajax({
                         type:'POST',
-                        url:"{{ route('addToCart') }}",
-                        data:{id_menu:id_menu},
+                        url:"{{ route('cart.update') }}",
+                        data:{id:id,qty:qty},
                         success:function(data){
-                            if(data.login){
-                                window.location.href = "{{route('login')}}";
-                            }else{
-                                $('#cart-'+id_menu).remove();
-                                $('.cart-'+id_menu).show();
-                            }
+                            console.log(data);
                         }
                     });
                 })
