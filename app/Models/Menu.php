@@ -15,4 +15,9 @@ class Menu extends Model
     {
         return $this->belongsTo(Resto::class,'id_resto','id');
     }
+
+    public function cart()
+    {
+        return $this->hasMany(Cart::class,'id_menu','id');
+    }
 }

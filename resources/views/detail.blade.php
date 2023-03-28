@@ -23,7 +23,7 @@
         <link href="{{ asset('') }}css/magnific-popup.css" rel="stylesheet">
 
         <link href="{{ asset('') }}css/tooplate-clean-work.css" rel="stylesheet">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
     </head>
     
     <body>
@@ -59,7 +59,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="" class="logo img-fluid" alt="">
+                    <img src="{{ asset('') }}images/newlogo.png" class="logo img-fluid" alt="">
 
                     <span class="ms-2">Top Food</span>
                 </a>
@@ -68,7 +68,47 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home') }}">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+
+                                <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+
+                                <li><a class="dropdown-item" href="page-404.html">Page 404</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item ms-3 dropdown">
+                            @if (Auth::user())
+                            <a class="nav-link dropdown-toggle custom-btn custom-border-btn custom-btn-bg-white btn" >{{ Auth::user()->name }}</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{{ route('transaction') }}">Pesanan</a></li>
+                                <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
+                            </ul>
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('cart')}}"><i class="bi bi-bag-check iconBeli"></i> Cart</a>
+                            @else 
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('login')}}">Login</a>
+                            @endif
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <main>
@@ -171,13 +211,17 @@
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <span class="text-primary">Rp. {{ number_format($item->harga,0,',','.'); }}</span>
-                                                <a href="{{ route('detail',$item->id) }}" class="btn-success btn button mt-2 ms-auto">
-                                                    <i class="bi bi-plus"></i>
+
+                                                <a data-id="{{ $item->id }}" id="cart-{{ $item->id }}" class="btn-success btn button mt-2 ms-auto beli">
+                                                    <i class="bi bi-plus iconBeli"></i>
+                                                </a>
+                                                <a style="display:none" href="{{ route('cart') }}" class="btn-outline-success btn button mt-2 ms-auto cart-{{ $item->id }}">
+                                                    {{-- <i class="bi bi-plus iconBeli"></i> --}}
+                                                    <i class="bi bi-bag-check iconBeli"></i>
                                                 </a>
                                             </div>
                                             <br>
-                                                
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -502,17 +546,42 @@
         </footer>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.backstretch.min.js"></script>
-        <script src="js/counter.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/init.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script src="js/animated-headline.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/magnific-popup-options.js"></script>
-        <script src="js/custom.js"></script>
-
+        <script src="{{ asset('') }}js/jquery.min.js"></script>
+        <script src="{{ asset('') }}js/bootstrap.min.js"></script>
+        <script src="{{ asset('') }}js/jquery.backstretch.min.js"></script>
+        <script src="{{ asset('') }}js/counter.js"></script>
+        <script src="{{ asset('') }}js/countdown.js"></script>
+        <script src="{{ asset('') }}js/init.js"></script>
+        <script src="{{ asset('') }}js/modernizr.js"></script>
+        <script src="{{ asset('') }}js/animated-headline.js"></script>
+        <script src="{{ asset('') }}js/jquery.magnific-popup.min.js"></script>
+        <script src="{{ asset('') }}js/magnific-popup-options.js"></script>
+        <script src="{{ asset('') }}js/custom.js"></script>
+        
+        <script>
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $(document).ready(function(){
+                $('.beli').on('click',function(){
+                    var id_menu = $(this).data('id')
+                    $.ajax({
+                        type:'POST',
+                        url:"{{ route('addToCart') }}",
+                        data:{id_menu:id_menu},
+                        success:function(data){
+                            if(data.login){
+                                window.location.href = "{{route('login')}}";
+                            }else{
+                                $('#cart-'+id_menu).remove();
+                                $('.cart-'+id_menu).show();
+                            }
+                        }
+                    });
+                })
+            })
+        </script>
     </body>
 </html>

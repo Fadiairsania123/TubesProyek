@@ -13,6 +13,7 @@ class LoginController extends Controller
 {
     public function index()
     {
+        session(['url.intended' => url()->previous()]);
         return view('login');
     }
 
@@ -30,8 +31,10 @@ class LoginController extends Controller
                 if(Auth::user()->email_verified_at != null){
                     if(Auth::user()->role == 'ADMIN'){
                         return redirect()->route('dashboardadmin');
+                    }else if(Auth::user()->role == 'RESTO'){
+                        return redirect()->route('pesanan.index');
                     }else{
-                        return redirect()->route('home');
+                        return redirect(session()->get('url.intended'));                   
                     }
                 }else{
                     Auth::logout();
