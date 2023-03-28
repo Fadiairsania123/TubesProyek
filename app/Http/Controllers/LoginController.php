@@ -34,7 +34,7 @@ class LoginController extends Controller
                     }else if(Auth::user()->role == 'RESTO'){
                         return redirect()->route('pesanan.index');
                     }else{
-                        return redirect(session()->get('url.intended'));                   
+                        return redirect('/home');                   
                     }
                 }else{
                     Auth::logout();
