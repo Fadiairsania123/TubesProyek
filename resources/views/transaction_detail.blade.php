@@ -148,10 +148,10 @@
                                     <tr>
                                         <td>{{ $key+1 }}</td>
                                         <td>{{ $item->menu->makanan }}</td>
-                                        <td>{{ $item->menu->harga }}</td>
+                                        <td>{{ $item->menu->harga * $item->qty }}</td>
                                         <td>{{ $item->qty }}</td>
                                         @php
-                                            $total += $item->menu->harga;
+                                            $total += $item->menu->harga * $item->qty;
                                             $qty += $item->qty;
                                         @endphp
                                     </tr>
