@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\RestoController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Resto\PesananController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,9 +45,18 @@ Route::get("/home",[HomeController::class,"index"])->name('home');
 Route::get("/detail/{id}",[HomeController::class,"detail"])->name('detail');
 Route::get("/about",[AboutController::class,"index"])->name('about');
 
+Route::post('/add-to-cart',[HomeController::class,'addToCart'])->name('addToCart');
+Route::get('/cart',[HomeController::class,'cart'])->name('cart');
+Route::get('/cart/del/{id}',[HomeController::class,'cart_destroy'])->name('cart.destroy');
+Route::post('/cart/update',[HomeController::class,'cart_edit'])->name('cart.update');
+Route::get('/checkout',[HomeController::class,'checkout'])->name('checkout');
+Route::post('/checkout',[HomeController::class,'checkout_submit'])->name('checkout.submit');
+Route::get('/pembayaran',[HomeController::class,'pembayaran'])->name('pembayaran');
+Route::get('/selesai',[HomeController::class,'selesai'])->name('selesai');
 
 Route::group(['middleware' => ["Login"]], function () {
-
+    Route::get('/transaction',[HomeController::class,'transaction'])->name('transaction');
+    Route::get('/transaction/{id}',[HomeController::class,'transaction_detail'])->name('transaction.detail');
 
 });
 
@@ -61,6 +71,13 @@ Route::group(['middleware' => ["Admin"],'prefix' => 'admin'], function () {
     Route::post('resto/{id}/menu/create', [MenuController::class,'menu_store'])->name('menu.resto.store');
     Route::get('menu/delete/{id}', [MenuController::class,'destroy'])->name('menu.hapus');
 
+});
+
+Route::group(['middleware' => ["Resto"],'prefix' => 'resto'], function () {
+    Route::resource('pesanan', PesananController::class);
+    Route::get('terima/{id}',[PesananController::class,'terima'])->name('pesanan.terima');
+    Route::get('tolak/{id}',[PesananController::class,'tolak'])->name('pesanan.tolak');
+    Route::get('kirim/{id}',[PesananController::class,'kirim'])->name('pesanan.kirim');
 });
 
 Route::get("/contact",[ContactController::class,"index"])->name('contact');
