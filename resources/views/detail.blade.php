@@ -23,7 +23,7 @@
         <link href="{{ asset('') }}css/magnific-popup.css" rel="stylesheet">
 
         <link href="{{ asset('') }}css/tooplate-clean-work.css" rel="stylesheet">
-        <meta name="csrf-token" content="{{ csrf_token() }}" />
+
     </head>
     
     <body>
@@ -59,7 +59,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="{{ asset('') }}images/newlogo.png" class="logo img-fluid" alt="">
+                    <img src="" class="logo img-fluid" alt="">
 
                     <span class="ms-2">Top Food</span>
                 </a>
@@ -82,17 +82,8 @@
                             <a class="nav-link" href="contact.html"></a>
                         </li>
 
-                        <li class="nav-item ms-3 dropdown">
-                            @if (Auth::user())
-                            <a class="nav-link dropdown-toggle custom-btn custom-border-btn custom-btn-bg-white btn" >{{ Auth::user()->name }}</a>
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="{{ route('transaction') }}">Pesanan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
-                            </ul>
-                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('cart')}}"><i class="bi bi-bag-check iconBeli"></i> Cart</a>
-                            @else 
-                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="{{route('login')}}">Login</a>
-                            @endif
+                        <li class="nav-item ms-3">
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#">Get started</a>
                         </li>
                     </ul>
                 </div>
@@ -199,17 +190,13 @@
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <span class="text-primary">Rp. {{ number_format($item->harga,0,',','.'); }}</span>
-
-                                                <a data-id="{{ $item->id }}" id="cart-{{ $item->id }}" class="btn-success btn button mt-2 ms-auto beli">
-                                                    <i class="bi bi-plus iconBeli"></i>
-                                                </a>
-                                                <a style="display:none" href="{{ route('cart') }}" class="btn-outline-success btn button mt-2 ms-auto cart-{{ $item->id }}">
-                                                    {{-- <i class="bi bi-plus iconBeli"></i> --}}
-                                                    <i class="bi bi-bag-check iconBeli"></i>
+                                                <a href="{{ route('detail',$item->id) }}" class="btn-success btn button mt-2 ms-auto">
+                                                    <i class="bi bi-plus"></i>
                                                 </a>
                                             </div>
                                             <br>
-
+                                                
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -367,7 +354,7 @@
                         </div>
 
                         <div class="col-lg-2 col-md-4 col-6">
-                            <img src="{{ asset('') }}images/about/food1.jpg" class="partners-image img-fluid">
+                            <img src="{{ asset('') }}images/partners/glorix.svg" class="partners-image img-fluid">
                         </div>
 
                         <div class="col-lg-2 col-md-4 col-6">
@@ -394,88 +381,88 @@
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
-        
+
                     <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
                         <div>
-                            <img src=" " class="logo img-fluid" alt="">
+                            <img src="{{ asset('') }}images/bubbles.png" class="logo img-fluid" alt="">
                         </div>
-        
+
                         <ul class="footer-menu d-flex flex-wrap ms-5">
                             <li class="footer-menu-item"><a href="#" class="footer-menu-link">About Us</a></li>
-        
+
                             <li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog</a></li>
-        
+
                             <li class="footer-menu-item"><a href="#" class="footer-menu-link">Reviews</a></li>
-        
+
                             <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
                         </ul>
                     </div>
-        
+
                     <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                        <h5 class="site-footer-title mb-3">Pilihan</h5>
-        
+                        <h5 class="site-footer-title mb-3">Our Services</h5>
+
                         <ul class="footer-menu">
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Drinks
+                                    House Cleaning
                                 </a>
                             </li>
-        
+
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Snack
+                                    Car Washing
                                 </a>
                             </li>
-        
+
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Food
+                                    Laundry
                                 </a>
                             </li>
-        
+
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Restaurant
+                                    Office Cleaning
                                 </a>
                             </li>
-        
+
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Restaurant
+                                    Toilet Cleaning
                                 </a>
                             </li>
                         </ul>
                     </div>
-        
+
                     <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
                         <h5 class="site-footer-title mb-3">Office</h5>
-        
+
                         <p class="text-white d-flex mt-3 mb-2">
                             <i class="bi-geo-alt-fill me-2"></i>
-                            Malang, Jawa Timur, Indonesia
+                            Akershusstranda 20, 0150 Oslo, Norway
                         </p>
-        
+
                         <p class="text-white d-flex mb-2">
                             <i class="bi-telephone-fill me-2"></i>
-        
+
                             <a href="tel: 110-220-9800" class="site-footer-link">
-                                0831-7649-7537
+                                110-220-9800
                             </a>
                         </p>
-        
+
                         <p class="text-white d-flex">
                             <i class="bi-envelope-fill me-2"></i>
-        
+
                             <a href="mailto:info@company.com" class="site-footer-link">
-                                TopFood@gmail.com
+                                info@company.com
                             </a>
                         </p>
-        
+
                         <ul class="social-icon mt-4">
                             <li class="social-icon-item">
                                 <a href="#" class="social-icon-link button button--skoll">
@@ -483,14 +470,14 @@
                                     <span class="bi-twitter"></span>
                                 </a>
                             </li>
-        
+
                             <li class="social-icon-item">
                                 <a href="#" class="social-icon-link button button--skoll">
                                     <span></span>
                                     <span class="bi-facebook"></span>
                                 </a>
                             </li>
-        
+
                             <li class="social-icon-item">
                                 <a href="#" class="social-icon-link button button--skoll">
                                     <span></span>
@@ -499,77 +486,53 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
                         <div class="featured-block">
-                            <h5 class="text-white mb-3">Service Admin</h5>
-        
+                            <h5 class="text-white mb-3">Service Hours</h5>
+
                             <strong class="d-block text-white mb-1">Mon - Fri</strong>
-        
+
                             <p class="text-white mb-3">8:00 AM - 5:30 PM</p>
-        
+
                             <strong class="d-block text-white mb-1">Sat</strong>
-        
+
                             <p class="text-white mb-0">6:00 AM - 2:30 PM</p>
                         </div>
                     </div>
                 </div>
             </div>
-        
+
             <div class="site-footer-bottom">
                 <div class="container">
                     <div class="row">
-        
+
                         <div class="col-lg-6 col-12">
-                            <p class="copyright-text mb-0">Copyright © Top Food East 2023</p>
+                            <p class="copyright-text mb-0">Copyright © 2036 Clean Work Co., Ltd.</p>
                         </div>
-        
+                        
                         <div class="col-lg-6 col-12 text-end">
                             <p class="copyright-text mb-0">
-                            // Designed by Kelompok 5 //</p>
+                            // Designed by <a href="https://www.tooplate.com" target="_parent">Tooplate</a> //</p>
                         </div>
-        
+                        
                     </div>
                 </div>
             </div>
         </footer>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="{{ asset('') }}js/jquery.min.js"></script>
-        <script src="{{ asset('') }}js/bootstrap.min.js"></script>
-        <script src="{{ asset('') }}js/jquery.backstretch.min.js"></script>
-        <script src="{{ asset('') }}js/counter.js"></script>
-        <script src="{{ asset('') }}js/countdown.js"></script>
-        <script src="{{ asset('') }}js/init.js"></script>
-        <script src="{{ asset('') }}js/modernizr.js"></script>
-        <script src="{{ asset('') }}js/animated-headline.js"></script>
-        <script src="{{ asset('') }}js/jquery.magnific-popup.min.js"></script>
-        <script src="{{ asset('') }}js/magnific-popup-options.js"></script>
-        <script src="{{ asset('') }}js/custom.js"></script>
-        
-        <script>
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            $(document).ready(function(){
-                $('.beli').on('click',function(){
-                    var id_menu = $(this).data('id')
-                    $.ajax({
-                        type:'POST',
-                        url:"{{ route('addToCart') }}",
-                        data:{id_menu:id_menu},
-                        success:function(data){
-                            if(data.login){
-                                window.location.href = "{{route('login')}}";
-                            }else{
-                                $('#cart-'+id_menu).remove();
-                                $('.cart-'+id_menu).show();
-                            }
-                        }
-                    });
-                })
-            })
-        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/animated-headline.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/custom.js"></script>
+
     </body>
 </html>
