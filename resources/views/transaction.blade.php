@@ -71,27 +71,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">Home</a>
+                            <a class="nav-link" href="{{ route('home') }}"></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
-
-                                <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-
-                                <li><a class="dropdown-item" href="page-404.html">Page 404</a></li>
-                            </ul>
+                            <a class="nav-link" href="about.html"></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html"></a>
                         </li>
 
                         <li class="nav-item ms-3 dropdown">
@@ -203,7 +191,7 @@
 
                     <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
                         <div>
-                            <img src="{{ asset('') }}images/bubbles.png" class="logo img-fluid" alt="">
+                            <img src="{{ asset('') }}images/newlogo.png" class="logo img-fluid" alt="">
                         </div>
 
                         <ul class="footer-menu d-flex flex-wrap ms-5">
@@ -218,41 +206,41 @@
                     </div>
 
                     <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                        <h5 class="site-footer-title mb-3">Our Services</h5>
+                        <h5 class="site-footer-title mb-3">Pilihan</h5>
 
                         <ul class="footer-menu">
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    House Cleaning
+                                    Drinks
                                 </a>
                             </li>
 
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Car Washing
+                                    Snack
                                 </a>
                             </li>
 
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Laundry
+                                    Food
                                 </a>
                             </li>
 
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Office Cleaning
+                                    Restaurant
                                 </a>
                             </li>
 
                             <li class="footer-menu-item">
                                 <a href="#" class="footer-menu-link">
                                     <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Toilet Cleaning
+                                    Restaurant
                                 </a>
                             </li>
                         </ul>
@@ -263,14 +251,14 @@
 
                         <p class="text-white d-flex mt-3 mb-2">
                             <i class="bi-geo-alt-fill me-2"></i>
-                            Akershusstranda 20, 0150 Oslo, Norway
+                            Malang, Jawa Timur, Indonesia
                         </p>
 
                         <p class="text-white d-flex mb-2">
                             <i class="bi-telephone-fill me-2"></i>
 
                             <a href="tel: 110-220-9800" class="site-footer-link">
-                                110-220-9800
+                                0831-7649-7537
                             </a>
                         </p>
 
@@ -278,7 +266,7 @@
                             <i class="bi-envelope-fill me-2"></i>
 
                             <a href="mailto:info@company.com" class="site-footer-link">
-                                info@company.com
+                                TopFood@gmail.com
                             </a>
                         </p>
 
@@ -308,7 +296,7 @@
 
                     <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
                         <div class="featured-block">
-                            <h5 class="text-white mb-3">Service Hours</h5>
+                            <h5 class="text-white mb-3">Service Admin</h5>
 
                             <strong class="d-block text-white mb-1">Mon - Fri</strong>
 
@@ -327,12 +315,12 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
-                            <p class="copyright-text mb-0">Copyright © 2036 Clean Work Co., Ltd.</p>
+                            <p class="copyright-text mb-0">Copyright © Top Food East 2023</p>
                         </div>
                         
                         <div class="col-lg-6 col-12 text-end">
                             <p class="copyright-text mb-0">
-                            // Designed by <a href="https://www.tooplate.com" target="_parent">Tooplate</a> //</p>
+                            // Designed by Kelompok 5 //</p>
                         </div>
                         
                     </div>

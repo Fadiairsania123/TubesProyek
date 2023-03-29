@@ -337,7 +337,7 @@
 
                     <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
                         <div>
-                            <img src=" " class="logo img-fluid" alt="">
+                            <img src="images/newlogo.png" class="logo img-fluid" alt="">
                         </div>
 
                         <ul class="footer-menu d-flex flex-wrap ms-5">

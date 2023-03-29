@@ -71,27 +71,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">Home</a>
+                            <a class="nav-link" href="{{ route('home') }}"></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
-
-                                <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-
-                                <li><a class="dropdown-item" href="page-404.html">Page 404</a></li>
-                            </ul>
+                            <a class="nav-link" href="about.html"></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html"></a>
                         </li>
 
                         <li class="nav-item ms-3 dropdown">
